@@ -82,5 +82,17 @@ def hideCreditCard(cardNumber):
 
     return resultString
 
-print(hideCreditCard(123095484444))
+#print(hideCreditCard(123095484444))
+
+###########################################################################
+
+def XequalsoO(string):
+    if string.count("x") == string.count("o"):
+        return True
+    else:
+        return False
+
+#print(XequalsoO("carr"))
+
+###########################################################################
 
