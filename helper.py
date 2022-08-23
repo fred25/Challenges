@@ -66,4 +66,21 @@ def countVowels(word):
 
     return count
 
-print(countVowels("test"))
+#print(countVowels("test"))
+
+###########################################################################
+
+def hideCreditCard(cardNumber):
+    cardString = str(cardNumber)
+
+    resultString = ""
+
+    for i in range(len(cardString)-4):
+        resultString+="*"
+
+    resultString += cardString[len(cardString)-4:]
+
+    return resultString
+
+print(hideCreditCard(123095484444))
+
