@@ -117,4 +117,17 @@ def calculator(number1, operator, number2):
 def discountCalculator(price, discount):
     return price - (discount/100)*price
 
-print(discountCalculator(100, 20))
+#print(discountCalculator(100, 20))
+
+###########################################################################
+
+array = [1, 4, 2, "carro", "macaco", 10, 19]
+
+def justTheNumbers(array):
+    resultList = []
+    for item in array:
+        if type(item) is int:
+            resultList.append(item)
+    return resultList
+
+#print(justTheNumbers(array))
