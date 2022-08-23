@@ -1,4 +1,5 @@
 from __future__ import print_function
+from mailbox import NoSuchMailboxError
 import math
 
 def radiansToDegrees(angle):
@@ -96,3 +97,17 @@ def XequalsoO(string):
 
 ###########################################################################
 
+def calculator(number1, operator, number2):
+    #i think this is cheating LOL
+    #return eval(str(number1) + operator + str(number2))
+    if operator == "+":
+        return number1 + number2
+    elif operator == "-":
+        return number1-number2
+    elif operator == "*":
+        return number1*number2
+    elif operator == "/":
+        return number1/number2
+    return "not valid parameters"
+
+print(calculator(1, "/", 2))
