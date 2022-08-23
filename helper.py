@@ -131,3 +131,15 @@ def justTheNumbers(array):
     return resultList
 
 #print(justTheNumbers(array))
+
+###########################################################################
+
+def repeatCharacters(string):
+    resultString = ""
+
+    for char in string:
+        resultString += 2*char
+    
+    return resultString
+
+print(repeatCharacters("test"))
