@@ -110,4 +110,11 @@ def calculator(number1, operator, number2):
         return number1/number2
     return "not valid parameters"
 
-print(calculator(1, "/", 2))
+#print(calculator(1, "/", 2))
+
+###########################################################################
+
+def discountCalculator(price, discount):
+    return price - (discount/100)*price
+
+print(discountCalculator(100, 20))
